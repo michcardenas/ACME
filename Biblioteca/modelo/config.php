@@ -1,5 +1,5 @@
 <?php
-// esta es la conexion de la base de datos
+// esta es la cons
 $host="localhost";
 $base="libros";
 $usuariodb="root";
