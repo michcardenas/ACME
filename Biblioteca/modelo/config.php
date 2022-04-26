@@ -10,7 +10,7 @@ $tabla_db1="libro";
 $conexion=new mysqli($host,$usuariodb,$clavedb,$base);
 
 if($conexion->connect_errno){
-    echoo "nuestro sitio experimenta fallos";
+    echo "nuestro sitio experimenta fallos";
     exit();
 }
 
