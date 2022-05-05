@@ -11,7 +11,7 @@ $conexion=new mysqli($host,$usuariodb,$clavedb,$base);
 
 if($conexion->connect_errno){
     echo "nuestro sitio experimenta fallos";
-    exit();
+    exit();s
 }
 
 
