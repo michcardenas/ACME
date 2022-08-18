@@ -1,7 +1,6 @@
-# Biblioteca-crud-php📚
+# acme-cars
 
+Esta es una prueba tecnica. Para la empresa oet
 
-Este es un crud en php para una prueba tecnica 📒📚
-para la empresa lavenir apps presentada el 22 de octubre de 2021.
 
 
