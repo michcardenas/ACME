@@ -7,7 +7,7 @@ if (isset($_GET['id_vehiculo'])){
     $sql="DELETE FROM  $tabla_db3 where id_vehiculo='".$id_vehiculo."'";
     if ($conexion->query($sql) === TRUE) {
         echo "Record deleted successfully";
-        header('Location: vehiculos.php');
+        header('Location: vehiculos.php#vehiculos');
       } else {
         echo "Error deleting record: " . $conexion->error;
       }

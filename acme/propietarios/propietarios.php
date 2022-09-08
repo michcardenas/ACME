@@ -30,13 +30,12 @@
 <nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top" style="background-color: #F7F6F2; ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="../index.php"> <img src="../imagenes/icon.png" alt="" width="100" height="50"><br></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <h1 class="col text-center h2">Propietarios</h1>
-    </div>
+   
   </div>
+  <a class="navbar-brand" href="../propietarios/propietarios.php"> Propietarios</a>
+  <a class="navbar-brand" href="../vehiculos/vehiculos.php"> Vehiculos</a>
+  <a class="navbar-brand" href="../conductores/conductores.php"> Conductores</a>
+  <a class="navbar-brand" href="../informes.php"> Informes</a>
 </nav>
 <!-- fin del nav -->
 
@@ -69,7 +68,7 @@
 </div>
 
 <!-- Fin del slide -->
-<div class="text-center ">
+<div id="Propietarios" class="text-center ">
   <h2>Propietarios</h2>
   <br>
   <h3>Propietarios al dia de <?php $hoy = date('m-d-Y', time()); echo $hoy; ?></h3>
@@ -78,13 +77,13 @@
 
 <!-- Boton de agregar -->
 <div >
-  <h3>+  <a href="agregar.php" class="btn btn btn-outline-success bi bi-book-half"><i></i>Agregar</a></h3>
+  <h3>  <a href="agregar.php" class="btn btn btn-outline-success bi bi-book-half"><i></i>Agregar</a></h3>
 </div>
 <!-- Fin de agregar -->
 <!-- Mostar lista de los libros ordenados por el año de publicación-->
 
-<table class="table">
-  <thead>
+<table class="table table-bordered table-sm table-striped">
+  <thead class="text-center">
     <tr>
     <th scope="col">Accion</th>
       <th scope="col">C.C propietario</th>
@@ -105,19 +104,23 @@
     
       ?>
         <tr>
-        <td class="center-text">
-        <a href="eliminar.php?cc_propietario=<?php echo $consulta ['cc_propietario']?>"  class="btn btn-outline-danger bi bi-trash" > <i></i>Eliminar</a>
-        <a href="editar.php?cc_propietario=<?php echo $consulta ['cc_propietario']?>"  class="btn btn-outline-info bi bi-pencil-fill"><i></i>Editar</a>
+        <td class="d-flex justify-content-around">
+         <a class="btn text-white btn-sm btn-floating" style="background-color: #E94560;" href="eliminar.php?cc_propietario=<?php echo $consulta ['cc_propietario']?>" role="button">
+          <i class="bi bi-trash-fill"></i>
+        </a>
+       <a class="btn text-white btn-sm btn-floating" style="background-color: #8FE3CF;" href="editar.php?cc_propietario=<?php echo $consulta ['cc_propietario']?>" role="button">
+      <i class="bi bi-pencil"></i>
+    </a></a>
        
       
         </td>  
-        <th scope="row"><?php echo $consulta ['cc_propietario']."</br>"; ?></th>
-        <td><?php echo $consulta ['primer_nombre_p']."</br>"; ?></td>
-        <td><?php echo $consulta ['segundo_nombre_p']."</br>"; ?></td>
-        <td><?php echo $consulta ['apellidos_p'] ."</br>"; ?></td>
-        <td><?php echo $consulta ['direccion_p'] ."</br>"; ?></td>
-        <td><?php echo $consulta ['telefono_p'] ."</br>"; ?></td>
-        <td><?php echo $consulta ['ciudad_p'] ."</br>"; ?></td>
+        <th  class="text-center" scope="row"><?php echo $consulta ['cc_propietario']."</br>"; ?></th>
+        <td  class="text-center"><?php echo $consulta ['primer_nombre_p']."</br>"; ?></td>
+        <td  class="text-center"><?php echo $consulta ['segundo_nombre_p']."</br>"; ?></td>
+        <td  class="text-center"><?php echo $consulta ['apellidos_p'] ."</br>"; ?></td>
+        <td  class="text-center"><?php echo $consulta ['direccion_p'] ."</br>"; ?></td>
+        <td  class="text-center"><?php echo $consulta ['telefono_p'] ."</br>"; ?></td>
+        <td  class="text-center"><?php echo $consulta ['ciudad_p'] ."</br>"; ?></td>
 
        
         </tr>

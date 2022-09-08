@@ -7,7 +7,7 @@ if (isset($_GET['cc_propietario'])){
     $sql="DELETE FROM  $tabla_db2 where cc_propietario='".$cc_propietario."'";
     if ($conexion->query($sql) === TRUE) {
         echo "Record deleted successfully";
-        header('Location: propietarios.php');
+        header('Location: propietarios.php#Propietarios');
       } else {
         echo "Error deleting record: " . $conexion->error;
       }
