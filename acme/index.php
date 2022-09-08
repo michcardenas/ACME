@@ -24,11 +24,13 @@
 <nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top" style="background-color: #F7F6F2; ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="index.php"> <img src="imagenes/icon.png" alt="" width="100" height="50"><br></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+   
     
   </div>
+  <a class="navbar-brand" href="propietarios/propietarios.php"> Propietarios</a>
+  <a class="navbar-brand" href="vehiculos/vehiculos.php"> Vehiculos</a>
+  <a class="navbar-brand" href="conductores/conductores.php"> Conductores</a>
+  <a class="navbar-brand" href="informes.php"> Informes</a>
 </nav>
 <!-- fin del nav -->
 
@@ -69,12 +71,12 @@
 </div>
 
 <!-- Boton de agregar -->
-<div class="row w-100 align-items-center">
-    			<div class="col text-center">
-          <h3><a href="propietarios/propietarios.php" class="btn btn btn-outline-primary bi bi-person"><i></i>Propietarios</a></h3>
-          <h3><a href="vehiculos/vehiculos.php" class="btn btn btn-outline-success bi bi-car-front"><i></i>🚗 Vehiculos</a></h3>
-          <h3><a href="conductores/conductores.php" class="btn btn btn-outline-info  bi bi-emoji-laughing"><i></i>Conductores</a></h3>
-          <h3><a href="informes.php" class="btn btn btn-outline-info  bi bi-journal-text"><i></i>Informes</a></h3>
+<div class="row w-100 ">
+    			<div class="d-flex justify-content-between flex-wrap">
+          <h3><a href="propietarios/propietarios.php" class="btn btn btn-outline-primary bi bi-person btn-lg"><i></i>Propietarios</a></h3>
+          <h3><a href="vehiculos/vehiculos.php" class="btn btn btn-outline-success bi bi-car-front btn-lg"><i></i>🚗 Vehiculos</a></h3>
+          <h3><a href="conductores/conductores.php" class="btn btn btn-outline-info  bi bi-emoji-laughing btn-lg"><i></i>Conductores</a></h3>
+          <h3><a href="informes.php" class="btn btn btn-outline-info  bi bi-journal-text btn-lg"><i></i>Informes</a></h3>
 
     				
     			</div>	
