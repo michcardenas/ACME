@@ -74,16 +74,16 @@
 <!-- Inputs-->
 
 <div class="mx-auto" style="width: 500px;">
-<form action="agregar.php" method="POST">
+<form action="agregar.php#alert" method="POST">
   
   <div   class="form-group col-8 text-center">
-        <label for="titulo">id_vehiculo</label>
-        <input type="number" name="id_vehiculo" class="form-control" id="id_vehiculo" autofocus>
+        
+        <input type="hidden" name="id_vehiculo" class="form-control" id="id_vehiculo" autofocus>
     </div>
 
     <div class="form-group col-8 text-center">
         <label for="titulo">placa</label>
-        <input type="text" name="placa" class="form-control" id="placa">
+        <input type="text" name="placa" class="form-control" id="placa" maxlength="6">
     </div>
 
     <div class="form-group col-8 text-center">
@@ -173,13 +173,13 @@
            
             
 
-            if($id_vehiculo==   "" || $placa ==""  || $marca==""|| $tipo_vehiculo=="" || $propietarios_id=="" || $conductor_id==""){
+            if( $placa ==""  || $marca==""|| $tipo_vehiculo=="" || $propietarios_id=="" || $conductor_id==""){
                 echo "<div class='alert alert-primary text-center' role='alert'>Debe diligenciar todos los campos</div>" ;
-                echo $id_vehiculo,$placa,$marca,$tipo_vehiculo,$propietarios_id,$conductor_id;
+                echo $placa,$marca,$tipo_vehiculo,$propietarios_id,$conductor_id;
             }else{
             $insertar=mysqli_query($conexion,"INSERT INTO  $tabla_db3(id_vehiculo,placa,color,marca,tipo_vehiculo,propietarios_id,conductor_id)VALUES('$id_vehiculo','$placa','$color','$marca','$tipo_vehiculo','$propietarios_id','$conductor_id')");
             if($insertar==true){
-              echo "<div class='alert alert-success text-center' role='alert'>El vehiculo ha sido guardado correctamente</div>";
+              echo "<div id='alert' class='alert alert-success text-center' role='alert'>El vehiculo ha sido guardado correctamente</div>";
           }else{
               echo"<div class='alert alert-danger text-center' role='alert'>Problemas en la creacion del vehiculo</div>";
           }
