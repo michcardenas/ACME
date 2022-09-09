@@ -82,7 +82,7 @@
 <form action="editar.php#boton"  >
 <div  class="d-flex   justify-content-center  flex-wrap"> 
   <div class="form-floating col-4 p-2  mt-5 ">
-        <label for="titulo">C.C conductor</label>
+        <label for="titulo">C.C Conductor</label>
         <input type="number" readonly="readonly" value="<?php echo $consulta ['cc_propietario']; ?>" name="cc_propietario" class="form-control" id="cc_propietario" >
     </div>
     </div> 
