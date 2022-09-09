@@ -73,31 +73,33 @@
 
 <!-- Inputs-->
 
-<div class="mx-auto" style="width: 500px;">
+<div class="mx-auto bg-light rounded   pb-5" style="width: 50%;">
 <form action="agregar.php#alert" method="POST">
   
-  <div   class="form-group col-8 text-center">
+<!-- ID del vehiculo es auto-incrementable por ende esta oculto -->
+<div class="d-flex   justify-content-center  flex-wrap">
+  <div class="form-floating col-4 p-2  mt-5">
+    <input type="hidden" name="id_vehiculo" class="form-control" id="id_vehiculo" autofocus>
+</div>
+
+    <div class="form-floating col-5 p-2 mt-5">
         
-        <input type="hidden" name="id_vehiculo" class="form-control" id="id_vehiculo" autofocus>
-    </div>
-
-    <div class="form-group col-8 text-center">
-        <label for="titulo">placa</label>
         <input type="text" name="placa" class="form-control" id="placa" maxlength="6">
+        <label for="placa">placa</label>
     </div>
 
-    <div class="form-group col-8 text-center">
+    <div class="form-floating col-5 p-2">
         <label for="autor">color</label>
         <input type="text" name="color" class="form-control" id="color">
     </div>
-    <div class="form-group col-8 text-center">
+    <div class="form-floating col-5 p-2">
         <label for="autor">marca</label>
         <input type="text" name="marca" class="form-control" id="marca">
     </div>
-    <div class="form-group col-8 text-center">
-    <label for="autor">tipo de vehiculo</label>
-              <select name="tipo_vehiculo" id="tipo_vehiculo">
-
+    <div class="form-floating col-5 p-2">
+    
+              <select name="tipo_vehiculo" id="tipo_vehiculo" class="form-select">
+              <option value="0">Tipo vehiculo:</option>
           <option>Particular</option>
 
           <option>Publico</option>
@@ -108,11 +110,11 @@
         <!-- <label for="autor">tipo_vehiculo</label>
         <input type="text" name="tipo_vehiculo" class="form-control" id="tipo_vehiculo"> -->
     </div>
-    <div class="form-group col-8 text-center">
-        <label for="autor">Propietarios</label>
+    <div class="form-floating col-5 p-2">
+        <label for="autor"></label>
 
-        <select name="propietarios_id" id="propietarios_id" >
-        <option value="0">Seleccione:</option>
+        <select name="propietarios_id" id="propietarios_id" class="form-select" >
+        <option value="0">Propietarios</option>
         <?php
          
          $resultados= mysqli_query($conexion,"SELECT * FROM  $tabla_db2");
@@ -123,10 +125,10 @@
         ?>
       </select>
     </div>
-    <div class="form-group col-8 text-center">
-        <label for="autor">Conductor</label>
-        <select name="conductor_id" id="conductor_id">
-        <option value="0">Seleccione:</option>
+    <div class="form-floating col-5 p-2">
+      
+        <select name="conductor_id" id="conductor_id" class="form-select">
+        <option value="0">Conductor</option>
         <?php
          
          $resultados= mysqli_query($conexion,"SELECT * FROM  $tabla_db1");
@@ -138,7 +140,7 @@
       </select>
     </div>
  
-
+    </div>
    
     
   
