@@ -78,43 +78,52 @@
         ?>
        
      
-<div class="mx-auto" style="width: 500px;">
-<form >
- <div class="form-group col-8 text-center">
+<div class="mx-auto bg-light rounded   pb-5 " style="width: 50%;">
+<form action="editar.php#boton"  >
+<div  class="d-flex   justify-content-center  flex-wrap"> 
+  <div class="form-floating col-4 p-2  mt-5 ">
         <label for="titulo">C.C conductor</label>
         <input type="number" readonly="readonly" value="<?php echo $consulta ['cc_propietario']; ?>" name="cc_propietario" class="form-control" id="cc_propietario" >
+    </div>
     </div> 
-
-    <div class="form-group col-8 text-center">
-        <label for="titulo">Primer nombre</label>
-        <input type="text" name="primer_nombre_p" class="form-control" id="primer_nombre_p">
+    <div class="d-flex   justify-content-center  flex-wrap">
+    <div class="form-floating col-5 p-2 mt-5">
+        
+        <input type="text" name="primer_nombre_p" class="form-control" id="primer_nombre_p" value="<?php echo $consulta ['primer_nombre_p']; ?>">
+        <label for="primer_nombre_p">Primer nombre</label>
     </div>
 
-    <div class="form-group col-8 text-center">
-        <label for="autor">Segundo nombre</label>
-        <input type="text" name="segundo_nombre_p" class="form-control" id="segundo_nombre_p">
+    <div class="form-floating col-5 p-2 mt-5">
+        
+        <input type="text" name="segundo_nombre_p" class="form-control" id="segundo_nombre_p" value="<?php echo $consulta ['segundo_nombre_p']; ?>">
+        <label for="segundo_nombre_p">Segundo nombre</label>
     </div>
-    <div class="form-group col-8 text-center">
-        <label for="autor">Apellidos</label>
-        <input type="text" name="apellidos_p" class="form-control" id="apellidos_p">
+    <div class="form-floating col-5 p-2 mt-5">
+        
+        <input type="text" name="apellidos_p" class="form-control" id="apellidos_p" value="<?php echo $consulta ['apellidos_p']; ?>">
+        <label for="apellidos_p">Apellidos</label>
     </div>
-    <div class="form-group col-8 text-center">
-        <label for="autor">Direccion</label>
-        <input type="text" name="direccion_p" class="form-control" id="direccion_p">
+    <div class="form-floating col-5 p-2 mt-5">
+        
+        <input type="text" name="direccion_p" class="form-control" id="direccion_p" value="<?php echo $consulta ['direccion_p']; ?>">
+        <label for="direccion_p">Direccion</label>
     </div>
-    <div class="form-group col-8 text-center">
-        <label for="autor">Telefono</label>
-        <input type="tel" name="telefono_p" class="form-control" id="telefono_p">
+    <div class="form-floating col-5 p-2 mt-5">
+       
+        <input type="tel" name="telefono_p" class="form-control" id="telefono_p" value="<?php echo $consulta ['telefono_p']; ?>">
+        <label for="telefono_p">Telefono</label>
     </div>
-    <div class="form-group col-8 text-center">
-        <label for="autor">Ciudad</label>
-        <input type="text" name="ciudad_p" class="form-control" id="ciudad_p">
+    <div class="form-floating col-5 p-2 mt-5">
+        
+        <input type="text" name="ciudad_p" class="form-control" id="ciudad_p" value="<?php echo $consulta ['ciudad_p']; ?>">
+        <label for="ciudad_p">Ciudad</label>
+    </div>
     </div>
     
-  
+  <div id="boton" class="d-flex  justify-content-center flex-wrap p-2">
     <button  type="submit" class="btn btn btn-outline-success bi bi-book-half" name="actualizar"> <i></i>Actualizar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="propietarios.php" class="btn btn-outline-info bi bi-pencil-fill"><i></i>Propietarios</a>
-   
+    <a href="propietarios.php" class="btn btn-outline-info bi bi-person-circle"><i></i>Propietarios</a>
+    </div>
 
 
     

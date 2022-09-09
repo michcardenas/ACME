@@ -72,7 +72,7 @@
 
 <!-- Boton de agregar -->
 <div class="row w-100 ">
-    			<div class="d-flex justify-content-between flex-wrap">
+    			<div class="d-flex justify-content-between flex-wrap p-5">
           <h3><a href="propietarios/propietarios.php" class="btn btn btn-outline-primary bi bi-person btn-lg"><i></i>Propietarios</a></h3>
           <h3><a href="vehiculos/vehiculos.php" class="btn btn btn-outline-success bi bi-car-front btn-lg"><i></i>🚗 Vehiculos</a></h3>
           <h3><a href="conductores/conductores.php" class="btn btn btn-outline-info  bi bi-emoji-laughing btn-lg"><i></i>Conductores</a></h3>
