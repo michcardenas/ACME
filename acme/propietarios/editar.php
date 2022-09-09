@@ -21,7 +21,16 @@
 
 
 <!-- Inicio nav -->
-
+<nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top" style="background-color: #F7F6F2; ">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="../index.php"> <img src="../imagenes/icon.png" alt="" width="100" height="50"><br></a>
+   
+  </div>
+  <a class="navbar-brand" href="../propietarios/propietarios.php"> Propietarios</a>
+  <a class="navbar-brand" href="../vehiculos/vehiculos.php"> Vehiculos</a>
+  <a class="navbar-brand" href="../conductores/conductores.php"> Conductores</a>
+  <a class="navbar-brand" href="../informes.php"> Informes</a>
+</nav>
 <!-- fin del nav -->
 
 <!-- inicio del slide -->

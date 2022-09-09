@@ -24,13 +24,12 @@
 <nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top" style="background-color: #F7F6F2; ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="../index.php"> <img src="../imagenes/icon.png" alt="" width="100" height="50"><br></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <h1 class="col text-center h2"></h1>
-    </div>
+   
   </div>
+  <a class="navbar-brand" href="../propietarios/propietarios.php"> Propietarios</a>
+  <a class="navbar-brand" href="../vehiculos/vehiculos.php"> Vehiculos</a>
+  <a class="navbar-brand" href="../conductores/conductores.php"> Conductores</a>
+  <a class="navbar-brand" href="../informes.php"> Informes</a>
 </nav>
 <!-- fin del nav -->
 
